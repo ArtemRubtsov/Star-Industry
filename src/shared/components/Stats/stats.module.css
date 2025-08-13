@@ -1,0 +1,42 @@
+.stats {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.statItemCash {
+  display: flex;
+  align-items: center;
+  color: #4ade80;
+}
+
+.statItemX2 {
+  display: flex;
+  align-items: center;
+  color: #60a5fa;
+}
+
+.statItemZero {
+  display: flex;
+  align-items: center;
+  color: #ef4444;
+}
+
+.statItemBomb {
+  display: flex;
+  align-items: center;
+  color: #ef4444;
+}
+
+.statItemStop {
+  display: flex;
+  align-items: center;
+  color: #ef4444;
+}
+span {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 5px;
+}

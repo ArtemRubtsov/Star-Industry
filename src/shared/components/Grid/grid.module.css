@@ -1,0 +1,81 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-width: 28rem;
+  width: 100%;
+}
+.cell {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  border-radius: 14px;
+}
+.front {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2),0px 4px 8px 0px rgba(24, 26, 32, 0.3);
+  backdrop-filter: blur(16px);
+  background: linear-gradient(180.00deg, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.05) 100%);
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 0px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.back {
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  /* background-color: rgba(88, 28, 135, 0.4); */
+  border-radius: 1.5rem;
+  backdrop-filter: blur(4px);
+}
+
+
+.cash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.cash img {
+  width: 100%;
+  height: auto;
+}
+.zero img {
+  width: 100%; 
+  height: auto;
+}
+
+.x2 img {
+  width: 100%;
+  height: auto;
+}
+
+.bomb img {
+  width: 100%;
+  height: auto;
+}
+
+.stop img {
+  width: 100%;
+  height: auto;
+}
+.cell:not(.opened):hover { 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}

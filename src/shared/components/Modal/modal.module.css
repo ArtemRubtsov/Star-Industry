@@ -1,0 +1,116 @@
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+.modalContent {
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  max-width: 320px;
+  width: 90%;
+}
+.header{
+  margin-top: 60px;
+}
+
+.dangerTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(255, 230, 230, 1);
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+  margin-bottom: 8px;
+}
+
+.dangerText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0px;
+}
+
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bombIcon {
+  position: relative;
+
+  width: 360px;
+  height: 260px;
+}
+
+.reward {
+  position: relative;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #00ff66;
+}
+
+.subText {
+  margin: 12px 0 20px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.takeHitButton,
+.defuseButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  flex: 1;
+  white-space: nowrap;
+}
+
+.takeHitButton {
+  padding: 7px 16px 9px 16px;
+  border-radius: 8px;
+  box-shadow: inset 0px -1px 4px 0px rgba(255, 255, 255, 0.1),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(180.00deg, rgba(255, 88, 88, 1),rgba(152.99996948242188, 52.80062484741211, 52.80062484741211, 1) 100%);
+}
+
+.defuseButton {
+  padding: 8px 16px 8px 16px;
+  border-radius: 6px;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(180.00deg, rgba(173, 105, 255, 1),rgba(103, 35, 205, 1) 100%);
+}
+
+.takeHitButton img,
+.defuseButton img {
+  margin: 0 5px;
+  width: 16px; 
+  height: 16px;
+}
+
+.reward img {
+  width: 40px; 
+  height: 40px;
+}
+

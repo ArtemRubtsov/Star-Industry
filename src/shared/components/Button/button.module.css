@@ -1,0 +1,16 @@
+.claimButton {
+  margin-top: 1.5rem;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding: 7px 16px 9px 16px;
+  border-radius: 8px;
+  width: 100%;
+  &:hover{
+    background-color: #16a34a;
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5),inset 0px -1px 4px 0px rgba(255, 255, 255, 0.3);
+    color: #fff;
+  }
+}

@@ -1,0 +1,141 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  padding-bottom: 70px; 
+  position: relative; 
+  overflow: visible;
+}
+.flyingCash {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px; 
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.flyingCash img {
+  width: 100%;
+  height: auto;
+}
+
+.flyingValue {
+  color: #4ade80; 
+  font-size: 1rem; 
+  font-weight: bold;
+  margin-top: -10px; 
+}
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem; 
+  overflow: hidden;
+  gap: 15px;
+}
+.line {
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.title__wrapper{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  color: rgba(255, 255, 255, 1);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+}
+.totalContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.roundedTotal{
+  color: rgba(255, 255, 255, 1);
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.takeHitButton,
+.defuseButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  flex: 1;
+  white-space: nowrap;
+}
+
+.takeHitButton {
+  padding: 7px 16px 9px 16px;
+  border-radius: 8px;
+  box-shadow: inset 0px -1px 4px 0px rgba(255, 255, 255, 0.1),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(180.00deg, rgba(255, 88, 88, 1),rgba(152.99996948242188, 52.80062484741211, 52.80062484741211, 1) 100%);
+}
+
+.defuseButton {
+  padding: 8px 16px 8px 16px;
+  border-radius: 6px;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(180.00deg, rgba(173, 105, 255, 1),rgba(103, 35, 205, 1) 100%);
+}
+
+.takeHitButton img,
+.defuseButton img {
+  margin: 0 5px;
+  width: 16px; 
+  height: 16px;
+}
+.claim{
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  flex: 1;
+  white-space: nowrap;
+  padding: 10px 50px;
+  background-color: #16a34a;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5),inset 0px -1px 4px 0px rgba(255, 255, 255, 0.3);
+}
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 10;
+}
