@@ -49,7 +49,7 @@ a:visited {
 }
 
 .bg {
-  height: 100dvh;
+  min-height: 100dvh;
   background-image: url('./shared/assets/img/bg.png'); 
   background-repeat: no-repeat;
   background-position: center top;
